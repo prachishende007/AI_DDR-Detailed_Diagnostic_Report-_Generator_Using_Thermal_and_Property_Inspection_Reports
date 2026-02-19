@@ -1,7 +1,9 @@
-# DDR AI Generator (Applied AI Builder)
+# AI-Powered Detailed Diagnostic Report (DDR) Generator
 
 ## Project Objective
 [cite_start]This system is an automated AI workflow designed to convert raw building site inspection documents and thermal imaging data into a structured, client-ready **Detailed Diagnostic Report (DDR)**[cite: 5]. [cite_start]The core focus is on reasoning, reliability, and the logical merging of qualitative observations with quantitative thermal findings[cite: 3, 4].
+
+---
 
 ## Features
 * [cite_start]**Automated Data Extraction**: Parses site observations and temperature readings from PDF documents[cite: 5].
@@ -10,6 +12,8 @@
     * [cite_start]If data points conflict, the system explicitly flags the discrepancy[cite: 6].
     * [cite_start]If information is missing, the system writes "Not Available" instead of hallucinating facts[cite: 6].
 * [cite_start]**Client-Friendly Reporting**: Generates summaries and recommendations using simple language devoid of unnecessary jargon[cite: 6].
+
+---
 
 ## DDR Report Structure
 [cite_start]The generated report follows the mandatory structure defined in the assignment guide[cite: 5]:
@@ -21,10 +25,14 @@
 * [cite_start]**Additional Notes** [cite: 5]
 * [cite_start]**Missing or Unclear Information**: Explicitly marks gaps as "Not Available"[cite: 5].
 
+---
+
 ## Technical Stack
 * **LLM**: DeepSeek-R1 (Ollama)
 * **Framework**: Python, Pydantic (for reliable data structuring)
 * **Libraries**: PyMuPDF (fitz) for PDF processing
+
+---
 
 ## Installation & Setup
 1. **Ollama**: Ensure Ollama is installed and the `deepseek-r1:8b` model is pulled.
